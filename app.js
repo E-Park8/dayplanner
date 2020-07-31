@@ -1,6 +1,7 @@
 $(document).ready(function (){
 $("#currentDay").html(moment().format("[Today is] dddd MMMM Do YYYY"))
-$("#timeNow").html(moment().format("[Accessed on] LT [PST]"))
+$("#timeNow").html(moment().format("[Accessed at] LT [PST]"))
+
 
 let currentTime = parseInt(moment().format("H"))
 //So this should get me current hour in military time. if anywhere between 8PM-8:59PM it'll give me 20.
